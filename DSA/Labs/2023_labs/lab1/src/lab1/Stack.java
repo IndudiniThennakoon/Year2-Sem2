@@ -39,4 +39,10 @@ public class Stack{
         }else
             return stackArray[top];
     }
+
+    public boolean isFull(){
+        if(top == -1)
+            return true;
+        else false;
+    }
 }
