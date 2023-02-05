@@ -39,11 +39,15 @@ public class Stack{
         }else
             return stackArray[top];
     }
-
+    //method to check whether stack is full or not
     public boolean isFull(){
 //        if(top == maxSize-1)
 //            r eturn true;
 //        else false;
         return (top == maxSize-1); // without using if condition check the stack is full or not
+    }
+    // method to check whether stack is empty or not
+    public boolean isEmpty(){
+        return(top ==-1);
     }
 }
