@@ -14,9 +14,11 @@ public class Stack{
 
     //push method
     public void push(char i){
-        top++;
-        stackArray[top] = i;
+//      top++;
+//      stackArray[top] = i;
+        stackArray[top++] = i;
     }
+
 
 
 }
