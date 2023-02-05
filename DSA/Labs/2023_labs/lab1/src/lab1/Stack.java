@@ -14,9 +14,12 @@ public class Stack{
 
     //push method
     public void push(char i){
-//      top++;
-//      stackArray[top] = i;
-        stackArray[top++] = i;
+        if (top == maxSize - 1) // check whether stack is full or not
+            System.out.println("stack is full");
+        else
+            //      top++;
+            //      stackArray[top] = i;
+            stackArray[top++] = i;
     }
 
 
