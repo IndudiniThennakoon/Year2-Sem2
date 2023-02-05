@@ -12,5 +12,11 @@ public class Stack{
         top = -1 // no items in the stack
     }
 
+    //push method
+    public void push(char i){
+        top++;
+        stackArray[top] = i;
+    }
+
 
 }
