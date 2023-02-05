@@ -41,8 +41,9 @@ public class Stack{
     }
 
     public boolean isFull(){
-        if(top == maxSize-1)
-            return true;
-        else false;
+//        if(top == maxSize-1)
+//            r eturn true;
+//        else false;
+        return (top == maxSize-1); // without using if condition check the stack is full or not
     }
 }
