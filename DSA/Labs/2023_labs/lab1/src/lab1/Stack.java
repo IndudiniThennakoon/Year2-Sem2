@@ -24,9 +24,10 @@ public class Stack{
 
     //pop method
     public char pop(){
-        return stackArray[top--];
+        if(top == -1){
+            System.out.println("Stack is empty");
+            return -99;
+        }else
+            return stackArray[top--];
     }
-
-
-
 }
