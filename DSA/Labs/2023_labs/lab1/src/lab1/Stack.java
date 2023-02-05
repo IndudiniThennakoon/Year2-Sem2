@@ -14,7 +14,7 @@ public class Stack{
 
     //push method
     public void push(char i){
-        if (top == maxSize - 1) // check whether stack is full or not
+        if (isFull()) // check whether stack is full or not
             System.out.println("stack is full");
         else
             //      top++;
@@ -24,7 +24,7 @@ public class Stack{
 
     //pop method
     public char pop(){
-        if(top == -1){ // check whether stack is empty or not
+        if(isEmpty()){ // check whether stack is empty or not
             System.out.println("Stack is empty");
             return -99;
         }else
@@ -33,7 +33,7 @@ public class Stack{
 
     //peek method
     public char peek(){
-        if(top == -1){
+        if(isEmpty()){
             System.out.println("Stack is empty");
             return -99;
         }else
