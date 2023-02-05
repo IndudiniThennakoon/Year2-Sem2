@@ -24,10 +24,19 @@ public class Stack{
 
     //pop method
     public char pop(){
-        if(top == -1){
+        if(top == -1){ // check whether stack is empty or not
             System.out.println("Stack is empty");
             return -99;
         }else
             return stackArray[top--];
+    }
+
+    //peek method
+    public char peek(){
+        if(top == -1){
+            System.out.println("Stack is empty");
+            return -99;
+        }else
+            return stackArray[top];
     }
 }
