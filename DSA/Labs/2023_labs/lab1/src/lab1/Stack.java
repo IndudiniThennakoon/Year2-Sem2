@@ -22,6 +22,11 @@ public class Stack{
             stackArray[top++] = i;
     }
 
+    //pop method
+    public char pop(){
+        return stackArray[top--];
+    }
+
 
 
 }
